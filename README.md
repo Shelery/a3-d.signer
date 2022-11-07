@@ -14,5 +14,7 @@ strives to create unique and unexpected experiences that challenge the status qu
 provoke thought. 
 
  when I read this paragraph, the line *challenge the status quo and
-provoke thought * stood out and radiated pure main charachters vibes so I decided to 
+provoke thought* stood out and radiated pure main charachters vibes so I decided to 
 to it into d.singer's slogen and a defining element of the design.
+
+[index.html](https://shelery.github.io/a3-d.signer/a3_portfolio_template/index.html)
