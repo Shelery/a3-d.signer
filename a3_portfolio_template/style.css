@@ -1,0 +1,443 @@
+/* 
+ * What follows are a few rules that make CSS more predictable to work with. 
+ * You don't have to understand these, just scroll down to where the file ends.
+ * If you are curious, this practice is sometimes called a "CSS reset" or "CSS Preflight", more about that here: https://www.youtube.com/watch?v=RReMYwB594g
+ * — Love, 221027
+ */
+
+/* Prevent padding and border from affecting element width. */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* Remove the margin in all browsers */
+body {
+  margin: 0;
+  line-height: inherit;
+}
+
+/* Remove the default font size and weight for headings. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Removes the default spacing for appropriate elements. */
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/******************************************************************/
+/*  ↓  The CSS Reset is over and you can now write your code!  ↓  */
+::selection {
+  color: #215cb5;
+  background-color: white;
+}
+body {
+  background-color: #215cb5;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  animation: fadeIn 600ms;
+}
+
+/*FadeIn animation
+source: https://blog.hubspot.com/website/css-fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* MAIN margin to compensate navbar */
+main {
+  margin-top: 6rem;
+}
+
+/* TITLE styles */
+h2 {
+  color: #215cb5;
+  background-color: white;
+  font-size: 2rem;
+  padding: 1rem 4rem;
+}
+
+/* navbar */
+nav {
+  /*styling */
+  background: #215cb5;
+  height: 6rem;
+
+  /* flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* make it fixed to the top */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ol {
+  display: flex;
+  justify-content: space-between;
+}
+/* get rid of default sytling */
+.nav-item {
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0.5;
+  text-decoration: none;
+  padding: 1rem;
+}
+.active {
+  opacity: 1;
+}
+
+/* index.html */
+.front-page-container {
+  display: flex;
+  max-width: 1440px;
+
+  margin: 0 auto;
+}
+.front-page-container .col {
+  width: 50%;
+}
+
+/* index.html front-page-container*/
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+/* index.html intro */
+.intro-col {
+  max-width: 704px;
+  padding: 2rem;
+}
+.intro-col .row1 {
+  margin-top: 140px;
+  margin-bottom: 1rem;
+}
+.intro-col h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intro-col p {
+  text-align: center;
+  line-height: 1.5rem;
+  max-width: 500px;
+}
+/* index.html image */
+.img-container {
+  height: fit-content;
+  width: fit-content;
+
+  position: relative;
+}
+.img-container .img {
+  width: 400px;
+  min-width: 400px;
+}
+
+.prompt-container {
+  /* positioning */
+  position: absolute;
+  top: 185px;
+  width: 100%;
+
+  /* flexbox */
+  display: flex;
+  flex-direction: column;
+}
+
+.prompt-container .row {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  padding: 0.5rem 0;
+}
+.prompt-container .row a {
+  /* flexbox */
+  display: flex;
+  align-items: center;
+
+  /* styling */
+  text-decoration: none;
+}
+.prompt-container h2 {
+  background-color: #215cb5;
+  width: 275px;
+  transition: width 300ms ease-in, background-color 200ms ease-out;
+}
+.prompt-container h2:hover {
+  background-color: white;
+  width: 300px;
+}
+
+/* ABOUT page */
+/* tile background */
+body.slogen-bg {
+  /* full device height*/
+  height: 100vh;
+  /* flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background styling */
+  background-attachment: fixed;
+  background-image: url(./images/slogen-bg.png);
+  background-size: 400px;
+}
+.slogen-main {
+  width: 75%;
+  max-width: 930px;
+}
+.content-container {
+  /* styling */
+  background-color: #215cb5;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  padding: 2.5rem;
+  box-shadow: -8px -8px 0px rgba(255, 255, 255, 0.75), 18px 18px 0px #000000;
+  border-radius: 5px;
+  /* flexbox */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.title-row {
+  margin: 0 auto;
+}
+.content-row {
+  display: flex;
+  gap: 2rem;
+}
+.description-col {
+  min-width: 27%;
+}
+
+/* GALLERY */
+.gallery-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+a.img-container {
+  width: fit-content;
+  height: min-content;
+  position: relative;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+
+  transition: all 300ms ease-in;
+}
+a.img-container:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+h2.project-name {
+  opacity: 0;
+  position: absolute;
+  font-size: 1.5rem;
+  padding: 1rem 6rem;
+  bottom: -5px;
+
+  transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.upper-case {
+  text-transform: uppercase;
+}
+/* make PROJECT-NAME appear when a.img-container:hover */
+a.img-container:hover h2.project-name {
+  opacity: 1;
+  padding: 1rem 2rem;
+}
+
+/* Single project page */
+main.project {
+  height: 100vh;
+  margin-top: 18rem;
+  z-index: -1;
+}
+.project-container {
+  padding: 0;
+}
+
+.project-container .title-row {
+  margin: 0;
+  background-size: auto;
+  background-position: center;
+  padding: 5rem 2rem 5rem;
+
+  height: max-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.project-container .title-row.delerium {
+  background-image: url("./assets/delerium/delerium_hero.png");
+}
+.project-container .title-row.superconvex {
+  background-image: url("./assets/superconvex/superconvex_hero.png");
+}
+.project-container .title-row.television {
+  background-image: url("./assets/television/television_hero.png");
+}
+.project-container .title-row.ungraphical {
+  background-image: url("./assets/ungraphical/ungraphical_hero.png");
+}
+
+h1.project-title {
+  color: #215cb5;
+  background-color: white;
+  font-size: 2rem;
+  padding: 1rem 4rem;
+  width: fit-content;
+}
+.project h2 {
+  font-size: 1.5rem;
+  width: fit-content;
+  padding: 0.5rem 2rem;
+}
+
+.project .content-row {
+  padding: 4rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.project .img-container {
+  display: flex;
+}
+.project .single-project-img {
+  width: 25%;
+}
+.project .single-project-img:hover {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* Possible solution 
+for ifferent scroll speed */
+/* source 
+https://stackoverflow.com/questions/42821213/different-scroll-speed-for-each-element
+*/
+.parallax {
+  max-width: 400px;
+  height: 500px; /* fallback for older browsers */
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+.parallax__group {
+  position: relative;
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__group {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(0.7);
+  transform: translateZ(90px) scale(0.7);
+  z-index: 1;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}
+/* <div class="parallax">
+                <div id="group1" class="parallax__group">
+                    <div class="parallax__layer parallax__layer--deep">
+                        <img src="./assets/delerium/delerium_0.png" alt="">
+                    </div>
+                </div>
+                <div id="group2" class="parallax__group">
+                    <div class="parallax__layer parallax__layer--fore">
+                        <img src="./assets/delerium/delerium_1.png" alt="">
+                    </div>
+                </div>
+                <div id="group3" class="parallax__group">
+                    <div class="parallax__layer parallax__layer--fore">
+                        <img src="./assets/delerium/delerium_2.png" alt="">
+                    </div>
+                </div>
+                <div id="group4" class="parallax__group">
+                    <div class="parallax__layer parallax__layer--back">
+                        <img src="./assets/delerium/delerium_3.png" alt="">
+                    </div>
+                </div>
+*/

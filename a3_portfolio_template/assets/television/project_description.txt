@@ -1,0 +1,5 @@
+"Embedded Television" uses embedded and embodied ideals to make a product that affords watching TV in any kind of object. The project was conceived and executed by me and a team of TV experts that I found via Craigslist. 
+<br><br>
+The our goal was to create a product that would allow users to watch TV in any kind of object, regardless of its size or shape. This is important so that we would not miss our shows. To do this, we embedded a small TV into a variety of everyday objects, such as a book, a vase, and a lamp. 
+<br><br>
+We conducted user tests to see how people would interact with the tiny TVs. We found that people were able to easily find and use the embedded TV, and that it didn't interfere with their use of the object. Overall, we where very pleased with the results of the user tests and felt that it successfully met our goals.

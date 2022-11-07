@@ -1,0 +1,7 @@
+Turbo Swipe is an interaction design project that proposed to bridge the gap between gestural interfaces on touch screens and the physical world. The project did not go very well for a number of reasons: 
+
+1) The core idea of the project was to create a "swipe" gesture that would allow users to interact with physical objects in the real world. However, we where unable to create a robust enough gesture recognition algorithm that could consistently recognize user input. This made the project much less useful than intended. 
+2) Turbo Swipe was that it required users to wear special gloves equipped with sensors. This made the project quite cumbersome and impractical for most users. 
+3) We struggled with marketing the project, as it was unclear how exactly Turbo Swipe would be used in everyday life. Without a clear use case, it was difficult to generate interest in the product. 
+
+Overall, Turbo Swipe was a well-intentioned, but ultimately failed. We faced many challenges in development and marketing, which ultimately prevented the product from being successful.

@@ -1,0 +1,5 @@
+The "Defunct Delerium" project is a project that uses absurdism and cosmic horror to make a point about the issues surrounding planned obsolescence. It features a website that simulates the experience of trying to purchase a product that has been discontinued. 
+
+The website is designed to look like a typical online store, but the products that are available for purchase are all discontinued items. The user is able to add these items to their cart, but they are unable to checkout. As the user tries to purchase more and more items, the experience becomes increasingly surreal and nightmarish. 
+
+The project makes a powerful statement about the wastefulness of planned obsolescence, and it highlights the ways in which consumers are often left feeling frustrated and powerless. The experience is unsettling and humorous, and it leaves a lasting impression on those who encounter it.
